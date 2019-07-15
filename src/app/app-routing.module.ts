@@ -1,3 +1,5 @@
+import { FormAdvanceComponent } from './Layout/Content-Page/form-advance/form-advance.component';
+import { BasicFormComponent } from './Layout/Content-Page/basic-form/basic-form.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { SuperAdminComponent } from './Multi-Layout/super-admin/super-admin.component';
@@ -23,9 +25,12 @@ const routes: Routes = [
   // Application Template routes goes here
   {
     path: 'template', component: SuperAdminComponent,
-    children: [{
-      path: 'dashboard-first', component: DashboardFirstComponent
-    }] },
+    children: [
+      { path: 'dashboard-first', component: DashboardFirstComponent },
+      { path: 'basic-form', component: BasicFormComponent },
+      { path: 'form-advance', component: FormAdvanceComponent },
+    ]
+  },
   
   // Content Page Redirection
   { path: '**', redirectTo: 'template' }

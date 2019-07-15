@@ -13,6 +13,8 @@ import { SuperAdminComponent } from './Multi-Layout/super-admin/super-admin.comp
 import { Client1Component } from './Multi-Layout/client1/client1.component';
 import { Client2Component } from './Multi-Layout/client2/client2.component';
 import { DashboardFirstComponent } from './Layout/Content-Page/dashboard-first/dashboard-first.component';
+import { BasicFormComponent } from './Layout/Content-Page/basic-form/basic-form.component';
+import { FormAdvanceComponent } from './Layout/Content-Page/form-advance/form-advance.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { DashboardFirstComponent } from './Layout/Content-Page/dashboard-first/d
     SuperAdminComponent,
     Client1Component,
     Client2Component,
-    DashboardFirstComponent
+    DashboardFirstComponent,
+    BasicFormComponent,
+    FormAdvanceComponent
   ],
   imports: [
     BrowserModule,
