@@ -15,7 +15,7 @@
   
 </head>
 
-<body>
+<body class="">
   <app-root></app-root>
   
   
@@ -24,7 +24,7 @@
   
   <script src="./Theme/js/inspinia.js"></script>
 
-  <script src="./Theme/js/plugins/pace/pace.min.js"></script>
+  <!-- <script src="./Theme/js/plugins/pace/pace.min.js"></script> -->
   <script src="./Theme/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 
   <script src="./Theme/js/plugins/flot/jquery.flot.js"></script>
@@ -219,12 +219,12 @@
 
       $('.demo1').colorpicker();
 
-      var divStyle = $('.back-change')[0].style;
-      $('#demo_apidemo').colorpicker({
-        color: divStyle.backgroundColor
-      }).on('changeColor', function (ev) {
-        divStyle.backgroundColor = ev.color.toHex();
-      });
+      // var divStyle = $('.back-change')[0].style;
+      // $('#demo_apidemo').colorpicker({
+      //   color: divStyle.backgroundColor
+      // }).on('changeColor', function (ev) {
+      //   divStyle.backgroundColor = ev.color.toHex();
+      // });
 
       $('.clockpicker').clockpicker();
 

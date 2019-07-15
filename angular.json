@@ -28,36 +28,9 @@
               "src/Theme"              
             ],
             "styles": [              
-              "./src/Theme/css/bootstrap.min.css",
-              "./src/Theme/font-awesome/css/font-awesome.css",
-              
-              "./src/Theme/css/plugins/blueimp/css/blueimp-gallery.min.css",
-              "./src/Theme/css/plugins/iCheck/custom.css",             
-              "./src/Theme/css/plugins/chosen/chosen.css",
-              "./src/Theme/css/plugins/colorpicker/bootstrap-colorpicker.min.css",
-              "./src/Theme/css/plugins/cropper/cropper.min.css",
-              "./src/Theme/css/plugins/switchery/switchery.css",
-              "./src/Theme/css/plugins/jasny/jasny-bootstrap.min.css",
-              "./src/Theme/css/plugins/nouslider/jquery.nouislider.css",              
-              "./src/Theme/css/plugins/datapicker/datepicker3.css",
-              "./src/Theme/css/plugins/ionRangeSlider/ion.rangeSlider.css",
-              "./src/Theme/css/plugins/ionRangeSlider/ion.rangeSlider.skinFlat.css",
-              "./src/Theme/css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css",
-              "./src/Theme/css/plugins/clockpicker/clockpicker.css",
-              "./src/Theme/css/plugins/daterangepicker/daterangepicker-bs3.css",
-              "./src/Theme/css/plugins/select2/select2.min.css",
-              "./src/Theme/css/plugins/touchspin/jquery.bootstrap-touchspin.min.css",
-
-              "./src/Theme/css/animate.css",
-              "./src/Theme/css/style.css",
-              "./src/Theme/css/plugins/toastr/toastr.min.css",
-              "./src/Theme/js/plugins/gritter/jquery.gritter.css"
+              "src/styles.scss"
             ],
-            "scripts": [
-              
-              
-              
-            ],
+            "scripts": [],
             "es5BrowserSupport": true
           },
           "configurations": {
