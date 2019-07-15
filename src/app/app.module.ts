@@ -15,6 +15,7 @@ import { Client2Component } from './Multi-Layout/client2/client2.component';
 import { DashboardFirstComponent } from './Layout/Content-Page/dashboard-first/dashboard-first.component';
 import { BasicFormComponent } from './Layout/Content-Page/basic-form/basic-form.component';
 import { FormAdvanceComponent } from './Layout/Content-Page/form-advance/form-advance.component';
+import { LoginComponent } from './Layout/Content-Page/login/login.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { FormAdvanceComponent } from './Layout/Content-Page/form-advance/form-ad
     Client2Component,
     DashboardFirstComponent,
     BasicFormComponent,
-    FormAdvanceComponent
+    FormAdvanceComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

@@ -6,6 +6,7 @@ import { SuperAdminComponent } from './Multi-Layout/super-admin/super-admin.comp
 import { Client1Component } from './Multi-Layout/client1/client1.component';
 import { Client2Component } from './Multi-Layout/client2/client2.component';
 import { DashboardFirstComponent } from './Layout/Content-Page/dashboard-first/dashboard-first.component';
+import { LoginComponent } from './Layout/Content-Page/login/login.component';
 
 const routes: Routes = [
   
@@ -23,12 +24,13 @@ const routes: Routes = [
   // { path: 'register', component: RegisterComponent },
 
   // Application Template routes goes here
+  { path: 'login', component: LoginComponent},
   {
     path: 'template', component: SuperAdminComponent,
     children: [
       { path: 'dashboard-first', component: DashboardFirstComponent },
       { path: 'basic-form', component: BasicFormComponent },
-      { path: 'form-advance', component: FormAdvanceComponent },
+      { path: 'form-advance', component: FormAdvanceComponent }      
     ]
   },
   

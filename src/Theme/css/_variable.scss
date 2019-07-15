@@ -1,12 +1,14 @@
-$primary-color: rgb(67%, 79%, 7%);
+$primary-color: orange;
 $second-color: rgb(19%, 55%, 86%);
 $third-color: rgba(19%, 55%, 86%, 0.3);
 $forth-color: white;
-$fifth-color: purple;
+$fifth-color: red;
 $six-color: rgb(19%, 55%, 86%);
 
 $theme-slide-background: #2f4050;
 
+$login-text-color: white;
+$login-background-color: purple;
 
 $eight-color: #19aa8d;
 $nine-color: #DFE4ED;
@@ -14,6 +16,9 @@ $ten-color: #8095a8;
 $elevan-color: #17987e;
 
 $btn-primary-color: #1dc5a3;
+$btn-primary-hover-color: #1dc5b9;
+$btn-primary-disable-hover-color: #1dc5d8;
+
 $btn-success-color: #1c84c6;
 $btn-success-hover-color: #1a7bb9;
 $btn-success-disable-hover-color: #1f90d8;
