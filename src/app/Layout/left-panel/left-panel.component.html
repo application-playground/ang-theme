@@ -1,3 +1,4 @@
+
 <nav class="navbar-default navbar-static-side" role="navigation">
     <div class="sidebar-collapse">
       <ul class="nav metismenu" id="side-menu">
@@ -14,7 +15,7 @@
               <li><a href="contacts.html">Contacts</a></li>
               <li><a href="mailbox.html">Mailbox</a></li>
               <li class="divider"></li>
-              <li><a href="login.html">Logout</a></li>
+              <li><a [routerLink]="['login']"  >Logout</a></li>
             </ul>
           </div>
           <div class="logo-element">
@@ -83,7 +84,7 @@
           <ul class="nav nav-second-level collapse">
             <li><a [routerLink]="['/template/basic-form']">Basic form</a></li>
             <li><a [routerLink]="['/template/form-advance']">Advanced Plugins</a></li>
-            <li><a href="form_wizard.html">Wizard</a></li>
+            <li><a [routerLink]="['/template/form-wizard']">Wizard</a></li>
             <li><a href="form_file_upload.html">File Upload</a></li>
             <li><a href="form_editors.html">Text Editor</a></li>
             <li><a href="form_markdown.html">Markdown</a></li>

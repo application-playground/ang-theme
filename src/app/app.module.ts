@@ -16,6 +16,9 @@ import { DashboardFirstComponent } from './Layout/Content-Page/dashboard-first/d
 import { BasicFormComponent } from './Layout/Content-Page/basic-form/basic-form.component';
 import { FormAdvanceComponent } from './Layout/Content-Page/form-advance/form-advance.component';
 import { LoginComponent } from './Layout/Content-Page/login/login.component';
+import { RegistrationComponent } from './Layout/Content-Page/registration/registration.component';
+import { ForgetPasswordComponent } from './Layout/Content-Page/forget-password/forget-password.component';
+import { FormWizardComponent } from './Layout/Content-Page/form-wizard/form-wizard.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +35,10 @@ import { LoginComponent } from './Layout/Content-Page/login/login.component';
     DashboardFirstComponent,
     BasicFormComponent,
     FormAdvanceComponent,
-    LoginComponent
+    LoginComponent,
+    RegistrationComponent,
+    ForgetPasswordComponent,
+    FormWizardComponent
   ],
   imports: [
     BrowserModule,
