@@ -19,6 +19,8 @@ import { LoginComponent } from './Layout/Content-Page/login/login.component';
 import { RegistrationComponent } from './Layout/Content-Page/registration/registration.component';
 import { ForgetPasswordComponent } from './Layout/Content-Page/forget-password/forget-password.component';
 import { FormWizardComponent } from './Layout/Content-Page/form-wizard/form-wizard.component';
+import { FileUploadComponent } from './Layout/Content-Page/file-upload/file-upload.component';
+import { FormEditorComponent } from './Layout/Content-Page/form-editor/form-editor.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import { FormWizardComponent } from './Layout/Content-Page/form-wizard/form-wiza
     LoginComponent,
     RegistrationComponent,
     ForgetPasswordComponent,
-    FormWizardComponent
+    FormWizardComponent,
+    FileUploadComponent,
+    FormEditorComponent
   ],
   imports: [
     BrowserModule,

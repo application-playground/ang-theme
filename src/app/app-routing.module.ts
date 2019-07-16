@@ -1,3 +1,5 @@
+import { FormEditorComponent } from './Layout/Content-Page/form-editor/form-editor.component';
+import { FileUploadComponent } from './Layout/Content-Page/file-upload/file-upload.component';
 import { FormWizardComponent } from './Layout/Content-Page/form-wizard/form-wizard.component';
 import { ForgetPasswordComponent } from './Layout/Content-Page/forget-password/forget-password.component';
 import { FormAdvanceComponent } from './Layout/Content-Page/form-advance/form-advance.component';
@@ -36,7 +38,9 @@ const routes: Routes = [
       { path: 'dashboard-first', component: DashboardFirstComponent },
       { path: 'basic-form', component: BasicFormComponent },
       { path: 'form-advance', component: FormAdvanceComponent },
-      { path: 'form-wizard', component: FormWizardComponent }      
+      { path: 'form-wizard', component: FormWizardComponent },   
+      { path: 'file-upload', component: FileUploadComponent },
+      { path: 'form-editors', component: FormEditorComponent }
     ]
   },
   
