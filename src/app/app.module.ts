@@ -3,10 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FooterComponent } from './Layout/footer/footer.component';
-import { BreadcrumbComponent } from './Layout/breadcrumb/breadcrumb.component';
-import { TopHeaderComponent } from './Layout/top-header/top-header.component';
-import { LeftPanelComponent } from './Layout/left-panel/left-panel.component';
+
 import { BasicGalleryComponent } from './Layout/Content-Page/basic-gallery/basic-gallery.component';
 import { BasicTableComponent } from './Layout/Content-Page/basic-table/basic-table.component';
 import { SuperAdminComponent } from './Multi-Layout/super-admin/super-admin.component';
@@ -21,14 +18,11 @@ import { ForgetPasswordComponent } from './Layout/Content-Page/forget-password/f
 import { FormWizardComponent } from './Layout/Content-Page/form-wizard/form-wizard.component';
 import { FileUploadComponent } from './Layout/Content-Page/file-upload/file-upload.component';
 import { FormEditorComponent } from './Layout/Content-Page/form-editor/form-editor.component';
+import { ShareModule } from './share/share.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FooterComponent,
-    BreadcrumbComponent,
-    TopHeaderComponent,
-    LeftPanelComponent,
     BasicGalleryComponent,
     BasicTableComponent,
     SuperAdminComponent,
@@ -46,7 +40,8 @@ import { FormEditorComponent } from './Layout/Content-Page/form-editor/form-edit
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ShareModule
   ],
   providers: [],
   bootstrap: [AppComponent]

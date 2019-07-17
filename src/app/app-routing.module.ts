@@ -40,7 +40,8 @@ const routes: Routes = [
       { path: 'form-advance', component: FormAdvanceComponent },
       { path: 'form-wizard', component: FormWizardComponent },   
       { path: 'file-upload', component: FileUploadComponent },
-      { path: 'form-editors', component: FormEditorComponent }
+      { path: 'form-editors', component: FormEditorComponent },
+      { path: 'app-view', loadChildren: './Layout/Content-Page/app-view/app-view.module#AppViewModule'}   // Code modified
     ]
   },
   
