@@ -10,14 +10,7 @@ import { SuperAdminComponent } from './Multi-Layout/super-admin/super-admin.comp
 import { Client1Component } from './Multi-Layout/client1/client1.component';
 import { Client2Component } from './Multi-Layout/client2/client2.component';
 import { DashboardFirstComponent } from './Layout/Content-Page/dashboard-first/dashboard-first.component';
-import { BasicFormComponent } from './Layout/Content-Page/basic-form/basic-form.component';
-import { FormAdvanceComponent } from './Layout/Content-Page/form-advance/form-advance.component';
-import { LoginComponent } from './Layout/Content-Page/login/login.component';
-import { RegistrationComponent } from './Layout/Content-Page/registration/registration.component';
-import { ForgetPasswordComponent } from './Layout/Content-Page/forget-password/forget-password.component';
-import { FormWizardComponent } from './Layout/Content-Page/form-wizard/form-wizard.component';
-import { FileUploadComponent } from './Layout/Content-Page/file-upload/file-upload.component';
-import { FormEditorComponent } from './Layout/Content-Page/form-editor/form-editor.component';
+
 import { ShareModule } from './share/share.module';
 
 @NgModule({
@@ -28,15 +21,7 @@ import { ShareModule } from './share/share.module';
     SuperAdminComponent,
     Client1Component,
     Client2Component,
-    DashboardFirstComponent,
-    BasicFormComponent,
-    FormAdvanceComponent,
-    LoginComponent,
-    RegistrationComponent,
-    ForgetPasswordComponent,
-    FormWizardComponent,
-    FileUploadComponent,
-    FormEditorComponent    
+    DashboardFirstComponent
   ],
   imports: [
     BrowserModule,

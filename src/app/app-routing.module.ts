@@ -1,18 +1,15 @@
 import { SimpleLoginComponent } from './share/simple-login/simple-login.component';
-import { FormEditorComponent } from './Layout/Content-Page/form-editor/form-editor.component';
-import { FileUploadComponent } from './Layout/Content-Page/file-upload/file-upload.component';
-import { FormWizardComponent } from './Layout/Content-Page/form-wizard/form-wizard.component';
-import { ForgetPasswordComponent } from './Layout/Content-Page/forget-password/forget-password.component';
-import { FormAdvanceComponent } from './Layout/Content-Page/form-advance/form-advance.component';
-import { BasicFormComponent } from './Layout/Content-Page/basic-form/basic-form.component';
+
+import { ForgetPasswordComponent } from './share/forget-password/forget-password.component';
+
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { SuperAdminComponent } from './Multi-Layout/super-admin/super-admin.component';
 import { Client1Component } from './Multi-Layout/client1/client1.component';
 import { Client2Component } from './Multi-Layout/client2/client2.component';
 import { DashboardFirstComponent } from './Layout/Content-Page/dashboard-first/dashboard-first.component';
-import { LoginComponent } from './Layout/Content-Page/login/login.component';
-import { RegistrationComponent } from './Layout/Content-Page/registration/registration.component';
+import { LoginComponent } from './share/login/login.component';
+import { RegistrationComponent } from './share/registration/registration.component';
 import { LockScreenComponent } from './share/lock-screen/lock-screen.component';
 import { Error404Component } from './share/error404/error404.component';
 import { Error500Component } from './share/error500/error500.component';
@@ -45,12 +42,8 @@ const routes: Routes = [
   {
     path: 'template', component: SuperAdminComponent,
     children: [
-      { path: 'dashboard-first', component: DashboardFirstComponent },
-      { path: 'basic-form', component: BasicFormComponent },
-      { path: 'form-advance', component: FormAdvanceComponent },
-      { path: 'form-wizard', component: FormWizardComponent },   
-      { path: 'file-upload', component: FileUploadComponent },
-      { path: 'form-editors', component: FormEditorComponent },
+      { path: 'dashboard-first', component: DashboardFirstComponent },      
+      { path: 'forms', loadChildren: './Layout/Content-Page/form-section/form-section.module#FormSectionModule' },
       { path: 'app-view', loadChildren: './Layout/Content-Page/app-view/app-view.module#AppViewModule' },
       { path: 'other-view', loadChildren: './Layout/Content-Page/other-page/other-page.module#OtherPageModule' }
       
