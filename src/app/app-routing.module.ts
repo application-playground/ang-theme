@@ -32,8 +32,8 @@ const routes: Routes = [
   // Application Template routes goes here
   { path: 'login', component: LoginComponent },
   { path: 'simple-login', component: SimpleLoginComponent },
-
   { path: 'register', component: RegistrationComponent },
+  
   { path: 'forget-password', component: ForgetPasswordComponent },
   { path: 'lock-screen', component: LockScreenComponent },
   { path: '404', component: Error404Component },
