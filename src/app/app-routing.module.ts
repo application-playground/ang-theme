@@ -45,7 +45,9 @@ const routes: Routes = [
       { path: 'dashboard-first', component: DashboardFirstComponent },      
       { path: 'forms', loadChildren: './Layout/Content-Page/form-section/form-section.module#FormSectionModule' },
       { path: 'app-view', loadChildren: './Layout/Content-Page/app-view/app-view.module#AppViewModule' },
-      { path: 'other-view', loadChildren: './Layout/Content-Page/other-page/other-page.module#OtherPageModule' }
+      { path: 'other-view', loadChildren: './Layout/Content-Page/other-page/other-page.module#OtherPageModule' },
+      { path: 'miss', loadChildren: './Layout/Content-Page/Miscellaneous-Section/miscellaneous-section.module#MiscellaneousSectionModule' }
+      
       
     ]
   },
