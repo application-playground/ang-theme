@@ -1,3 +1,4 @@
+import { SimpleLoginComponent } from './share/simple-login/simple-login.component';
 import { FormEditorComponent } from './Layout/Content-Page/form-editor/form-editor.component';
 import { FileUploadComponent } from './Layout/Content-Page/file-upload/file-upload.component';
 import { FormWizardComponent } from './Layout/Content-Page/form-wizard/form-wizard.component';
@@ -12,6 +13,9 @@ import { Client2Component } from './Multi-Layout/client2/client2.component';
 import { DashboardFirstComponent } from './Layout/Content-Page/dashboard-first/dashboard-first.component';
 import { LoginComponent } from './Layout/Content-Page/login/login.component';
 import { RegistrationComponent } from './Layout/Content-Page/registration/registration.component';
+import { LockScreenComponent } from './share/lock-screen/lock-screen.component';
+import { Error404Component } from './share/error404/error404.component';
+import { Error500Component } from './share/error500/error500.component';
 
 const routes: Routes = [
   
@@ -30,8 +34,14 @@ const routes: Routes = [
 
   // Application Template routes goes here
   { path: 'login', component: LoginComponent },
+  { path: 'simple-login', component: SimpleLoginComponent },
+
   { path: 'register', component: RegistrationComponent },
   { path: 'forget-password', component: ForgetPasswordComponent },
+  { path: 'lock-screen', component: LockScreenComponent },
+  { path: '404', component: Error404Component },
+  { path: '500', component: Error500Component },
+  
   {
     path: 'template', component: SuperAdminComponent,
     children: [
@@ -41,7 +51,9 @@ const routes: Routes = [
       { path: 'form-wizard', component: FormWizardComponent },   
       { path: 'file-upload', component: FileUploadComponent },
       { path: 'form-editors', component: FormEditorComponent },
-      { path: 'app-view', loadChildren: './Layout/Content-Page/app-view/app-view.module#AppViewModule'}   // Code modified
+      { path: 'app-view', loadChildren: './Layout/Content-Page/app-view/app-view.module#AppViewModule' },
+      { path: 'other-view', loadChildren: './Layout/Content-Page/other-page/other-page.module#OtherPageModule' }
+      
     ]
   },
   

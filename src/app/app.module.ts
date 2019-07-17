@@ -36,7 +36,7 @@ import { ShareModule } from './share/share.module';
     ForgetPasswordComponent,
     FormWizardComponent,
     FileUploadComponent,
-    FormEditorComponent
+    FormEditorComponent    
   ],
   imports: [
     BrowserModule,
