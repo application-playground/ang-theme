@@ -3,11 +3,12 @@ import { FileUploadComponent } from './file-upload/file-upload.component';
 import { FormWizardComponent } from './form-wizard/form-wizard.component';
 import { FormAdvanceComponent } from './form-advance/form-advance.component';
 import { BasicFormComponent } from './basic-form/basic-form.component';
-import { NgModule } from '@angular/core';
+import { NgModule, AfterViewInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { FormSectionRoutingModule } from './form-section-routing.module';
 import { ShareModule } from 'src/app/share/share.module';
+declare var jQuery: any;
 
 @NgModule({
   declarations: [
@@ -23,4 +24,9 @@ import { ShareModule } from 'src/app/share/share.module';
     ShareModule
   ]
 })
-export class FormSectionModule { }
+export class FormSectionModule implements AfterViewInit {
+  
+  ngAfterViewInit() {
+    jQuery('#side-menu').metisMenu();
+  }
+ }

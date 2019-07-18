@@ -1,6 +1,6 @@
 import { ContactComponent } from './contact/contact.component';
 import { ShareModule } from './../../../share/share.module';
-import { NgModule } from '@angular/core';
+import { NgModule, AfterViewInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { AppViewRoutingModule } from './app-view-routing.module';
@@ -22,6 +22,8 @@ import { ArticleComponent } from './article/article.component';
 import { FAQComponent } from './faq/faq.component';
 import { TimelineComponent } from './timeline/timeline.component';
 import { PinBoardComponent } from './pin-board/pin-board.component';
+
+declare var jQuery: any;
 
 @NgModule({
   declarations: [
@@ -51,4 +53,10 @@ import { PinBoardComponent } from './pin-board/pin-board.component';
     ShareModule
   ],
 })
-export class AppViewModule { }
+export class AppViewModule implements AfterViewInit {
+  
+  ngAfterViewInit() {
+    jQuery('#side-menu').metisMenu();
+  }
+
+ }
