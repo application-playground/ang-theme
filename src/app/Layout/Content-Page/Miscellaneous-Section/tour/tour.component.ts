@@ -1,0 +1,72 @@
+import { Component, OnInit, AfterViewInit } from '@angular/core';
+declare var jQuery: any;
+declare var Tour: any;
+
+@Component({
+  selector: 'app-tour',
+  templateUrl: './tour.component.html',
+  styleUrls: ['./tour.component.scss']
+})
+export class TourComponent implements OnInit, AfterViewInit {
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+  ngAfterViewInit() {
+
+    jQuery(document).ready(function (){
+
+      // Instance the tour
+      var tour = new Tour({
+          steps: [{
+
+                  element: "#step1",
+                  title: "Title of my step",
+                  content: "Introduce new users to your product by walking them through it step by step.",
+                  placement: "top"
+              },
+              {
+                  element: "#step2",
+                  title: "Title of my step",
+                  content: "Content of my step",
+                  placement: "top",
+                  backdrop: true,
+                  backdropContainer: '#wrapper',
+                  onShown: function (tour){
+                      jQuery('body').addClass('tour-open')
+                  },
+                  onHidden: function (tour){
+                      jQuery('body').removeClass('tour-close')
+                  }
+              },
+              {
+                  element: "#step3",
+                  title: "Title of my step",
+                  content: "Introduce new users to your product by walking them through it step by step.",
+                  placement: "bottom"
+              },
+              {
+                  element: "#step4",
+                  title: "Title of my step",
+                  content: "Introduce new users to your product by walking them through it step by step.",
+                  placement: "top"
+              }
+          ]});
+
+      // Initialize the tour
+      tour.init();
+
+      jQuery('.startTour').click(function(){
+          tour.restart();
+
+          // Start the tour
+          // tour.start();
+      })
+
+  });
+
+  }
+
+}
